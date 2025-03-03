@@ -10,13 +10,12 @@
     <div class = "background">
     <h1 style = "color: white;">Calculator</h1>
     <div id="container">
-        <div id="display">0</div>
-
+        <input id="display" type="text" placeholder="0" readonly>
         <div class="button-row">
-            <button class="button">AC</button>
-            <button class="button">+/-</button>
-            <button class="button">%</button>
-            <button class="button" style="background-color: orange;">÷</button>
+            <button class="button" onclick="clearDisplay()">AC</button>
+            <button class="button" onclick="changeSign()">+/-</button>
+            <button class="button" onclick="percentage()">%</button>
+            <button class="button" style="background-color: orange;" onclick="div()">÷</button>
         </div>
         <div class="button-row">
             <button class="button">7</button>
