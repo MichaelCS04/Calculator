@@ -15,30 +15,30 @@
             <button class="button" onclick="clearDisplay()">AC</button>
             <button class="button" onclick="changeSign()">+/-</button>
             <button class="button" onclick="percentage()">%</button>
-            <button class="button" style="background-color: orange;" onclick="div()">÷</button>
+            <button class="button" style="background-color: orange;" onclick= "document.getElementById('display').value += '/'">÷</button>
         </div>
         <div class="button-row">
-            <button class="button">7</button>
-            <button class="button">8</button>
-            <button class="button">9</button>
-            <button class="button" style="background-color: orange;">×</button>
+            <button class="button" onclick= "document.getElementById('display').value += '7'">7</button>
+            <button class="button" onclick= "document.getElementById('display').value += '8'">8</button>
+            <button class="button" onclick= "document.getElementById('display').value += '9'">9</button>
+            <button class="button" style="background-color: orange;" onclick= "document.getElementById('display').value += '*'">×</button>
         </div>
         <div class="button-row">
-            <button class="button">4</button>
-            <button class="button">5</button>
-            <button class="button">6</button>
-            <button class="button" style="background-color: orange;">-</button>
+            <button class="button" onclick= "document.getElementById('display').value += '4'">4</button>
+            <button class="button" onclick= "document.getElementById('display').value += '5'">5</button>
+            <button class="button" onclick= "document.getElementById('display').value += '6'">6</button>
+            <button class="button" style="background-color: orange;" onclick= "document.getElementById('display').value += '-'">-</button>
         </div>
         <div class="button-row">
-            <button class="button">1</button>
-            <button class="button">2</button>
-            <button class="button">3</button>
-            <button class="button" style="background-color: orange;">+</button>
+            <button class="button" onclick= "document.getElementById('display').value += '1'">1</button>
+            <button class="button" onclick= "document.getElementById('display').value += '2'">2</button>
+            <button class="button" onclick= "document.getElementById('display').value += '3'">3</button>
+            <button class="button" style="background-color: orange;" onclick= "document.getElementById('display').value += '+'">+</button>
         </div>
         <div class="button-row">
-            <button class="button">0</button>
-            <button class="button">.</button>
-            <button class="button" style="background-color: black; color:white;">=</button>
+            <button class="button" onclick= "document.getElementById('display').value += '0'">0</button>
+            <button class="button" onclick= "document.getElementById('display').value += '.'">.</button>
+            <button class="button" style="background-color: black; color:white;" onclick="triggerEnter()">=</button>
         </div>
     </div>
 </div>

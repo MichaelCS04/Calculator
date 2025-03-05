@@ -57,19 +57,22 @@ function clearDisplay(){
 function changeSign(){
     let num = document.getElementById("display").value
     console.log(document.getElementById("display").value)
-    if (num.substring(0,1) == "-"){
-        document.getElementById("display").value
-    }
+    
 }
 function percentage(){
     let num = document.getElementById("display").value
     num = num * 0.01
     document.getElementById("display").value= num
 }
-
-
-function div(){
-    let num = document.getElementById("display").value
-    document.getElementById("display").value='';
-    if 
+function handleEnter(event) {
+    if (event.key === 'Enter') {
+        try {
+            document.getElementById('display').value = eval(document.getElementById('display').value);
+        } catch {
+            document.getElementById('display').value = "Error";
+        }
+    }
+}
+function triggerEnter() {
+    handleEnter({ key: 'Enter' });
 }
