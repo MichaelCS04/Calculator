@@ -55,9 +55,19 @@ function clearDisplay(){
     document.getElementById("display").value='';
 }
 function changeSign(){
-    let num = document.getElementById("display").value
-    console.log(document.getElementById("display").value)
-    
+    let display = document.getElementById("display");
+    let value = display.value;
+
+    // Regular expression to match the last number in the expression
+    let match = value.match(/-?\d+(\.\d+)?$/); 
+
+    if (match) {
+        let lastNumber = match[0]; 
+        let flippedNumber = lastNumber.startsWith("-") ? lastNumber.slice(1) : "-" + lastNumber;
+
+        // Replace the last number with its negated version
+        display.value = value.slice(0, -lastNumber.length) + flippedNumber;
+    }
 }
 function percentage(){
     let num = document.getElementById("display").value
