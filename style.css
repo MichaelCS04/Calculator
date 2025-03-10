@@ -32,6 +32,7 @@ button:focus {
     width: 250px;
     border-radius: 5%;
     padding-right: 10px;
+    text-overflow: hidden;
 }
 .button-row{
     box-sizing: border-box;

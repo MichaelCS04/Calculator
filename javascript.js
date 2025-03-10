@@ -2,7 +2,6 @@ document.addEventListener("keydown", function(event) {
     let display = document.getElementById("display");
     let key = event.key;
     let currentValue = display.value;
-
     // Prevent 0 from being the first digit
     if (key === "0") {
         // If the input is empty or the last character is an operator, prevent input
